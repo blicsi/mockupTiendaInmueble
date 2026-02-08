@@ -1,5 +1,6 @@
 package com.inmobiliaria.back.inmobiliaria.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,6 +22,7 @@ public class Payment {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "transaction_id")
+    @JsonIgnore
     private Transaction transaction;
 }
 
