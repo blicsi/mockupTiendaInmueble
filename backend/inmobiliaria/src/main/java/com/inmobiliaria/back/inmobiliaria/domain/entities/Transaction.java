@@ -20,7 +20,7 @@ public class Transaction {
     private LocalDate date;
     private Double price;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "property_id")
     private Property property;
 
@@ -28,7 +28,7 @@ public class Transaction {
     @JoinColumn(name = "buyer_id")
     private Client buyer;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "seller_id")
     private Client seller;
 }
