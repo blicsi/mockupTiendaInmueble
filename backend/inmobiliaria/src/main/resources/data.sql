@@ -44,7 +44,7 @@ INSERT INTO appointment (appointment_id, "date", "time", client_id, listing_id) 
 -- =========================
 -- TRANSACTIONS
 -- =========================
-INSERT INTO "transaction" (transaction_id, date, price, property_id, buyer_id, seller_id) VALUES
+INSERT INTO "transaction" (transaction_id, "date", price, property_id, buyer_id, seller_id) VALUES
 (1, '2026-02-05', 245000, 1, 1, 2),
 (2, '2026-02-06', 118000, 2, 3, 2);
 
@@ -52,7 +52,7 @@ INSERT INTO "transaction" (transaction_id, date, price, property_id, buyer_id, s
 -- =========================
 -- PAYMENTS
 -- =========================
-INSERT INTO payment (payment_id, amount, date, transaction_id) VALUES
+INSERT INTO payment (payment_id, amount, "date", transaction_id) VALUES
 (1, 50000, '2026-02-05', 1),
 (2, 195000, '2026-02-06', 1),
 (3, 118000, '2026-02-06', 2);
