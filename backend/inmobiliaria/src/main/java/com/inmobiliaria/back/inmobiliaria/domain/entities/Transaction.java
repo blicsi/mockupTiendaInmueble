@@ -23,16 +23,13 @@ public class Transaction {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "property_id")
-    @JsonIgnore
     private Property property;
 
     @ManyToOne
     @JoinColumn(name = "buyer_id")
-    @JsonIgnore
     private Client buyer;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "seller_id")
-    @JsonIgnore
     private Client seller;
 }

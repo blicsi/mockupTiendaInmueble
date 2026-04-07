@@ -22,7 +22,6 @@ public class Payment {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "transaction_id")
-    @JsonIgnore
     private Transaction transaction;
 }
 

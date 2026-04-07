@@ -22,11 +22,9 @@ public class Listing {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "property_id")
-    @JsonIgnore
     private Property property;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "agent_id")
-    @JsonIgnore
     private Agent agent;
 }
