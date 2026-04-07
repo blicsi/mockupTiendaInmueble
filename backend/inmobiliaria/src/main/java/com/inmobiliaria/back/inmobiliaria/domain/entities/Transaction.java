@@ -17,7 +17,6 @@ public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionId;
-
     private LocalDate date;
     private Double price;
 
