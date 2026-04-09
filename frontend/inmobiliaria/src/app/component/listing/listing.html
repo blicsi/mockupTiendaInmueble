@@ -1,0 +1,16 @@
+
+<div class="Listing">
+    <h2>Listados</h2>
+    <ul>
+        @for (listado of listados; track listado) {
+            <li>{{listado}}</li>
+        }@empty {
+            <li>no hay listados</li>
+        }
+    </ul>
+
+    <h4>{{nuevoListado}}</h4>
+    <input [(ngModel)]='nuevoListado' type="text" placeholder="añadir listado"/>
+    <button (click)="addListado()">Añadir</button>
+
+</div>
