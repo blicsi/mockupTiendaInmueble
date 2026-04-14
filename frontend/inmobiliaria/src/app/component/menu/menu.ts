@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Login } from '../login/login';
 
 @Component({
   selector: 'app-menu',
@@ -6,4 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './menu.html',
   styleUrl: './menu.css',
 })
-export class Menu {}
+export class Menu {
+
+  constructor(public dialog: MatDialog){}
+
+  openModal(): void{
+    this.dialog.open(Login);
+  }
+
+}

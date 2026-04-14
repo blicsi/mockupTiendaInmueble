@@ -13,6 +13,6 @@ import { Busqueda } from './component/busqueda/busqueda';
 })
 export class App {
   protected readonly title ='Inmobiliaria';
-  protected readonly descripcion = "Inmoviliaria de blur y blicsi";
-  protected readonly autores= "Blur/Blicsi"
+  protected readonly descripcion = "Inmoviliaria de lucas y blicsi";
+  protected readonly autores= "Lucas/Blicsi"
 }

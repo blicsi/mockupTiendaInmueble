@@ -1,1 +1,17 @@
-<p>login works!</p>
+<h1 mat-dialog-title>Iniciar sesion</h1>
+<div mat-dialog-content>
+  <form>
+  <label for="username">
+    Nombre de usuario
+    <input id="username" type="text">
+  </label>
+  <label for="password">
+    Contraseña
+    <input id="password" type="password">
+  </label>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeModal()">Cerrar</button>
+</div>
+

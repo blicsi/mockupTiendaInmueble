@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-login',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
-export class Login {}
+export class Login {
+  constructor(public dialogRef: MatDialogRef<Login>){}
+
+  closeModal(): void{
+    this.dialogRef.close();
+  }
+}
