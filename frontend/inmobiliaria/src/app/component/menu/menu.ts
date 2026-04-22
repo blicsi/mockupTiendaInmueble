@@ -6,7 +6,7 @@ import { Login } from '../login/login';
 
 @Component({
   selector: 'app-menu',
-  imports: [MatButton, MatFabButton,MatIcon],
+  imports: [MatButton, MatFabButton, MatIcon],
   templateUrl: './menu.html',
   styleUrl: './menu.css',
 })
@@ -17,5 +17,4 @@ export class Menu {
   openModal(): void{
     this.dialog.open(Login);
   }
-
 }

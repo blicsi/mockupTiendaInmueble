@@ -1,17 +1,15 @@
 <h1 mat-dialog-title>Iniciar sesion</h1>
-<div mat-dialog-content>
-  <form>
-  <label for="username">
-    Nombre de usuario
-    <input id="username" type="text">
-  </label>
-  <label for="password">
-    Contraseña
-    <input id="password" type="password">
-  </label>
-  </form>
+<div class="login_screen" mat-dialog-content>
+  <mat-form-field>
+    <mat-label>MAIL</mat-label>
+    <input matInput>
+  </mat-form-field>
+    <mat-form-field>
+    <mat-label>CONTRASEÑA</mat-label>
+    <input matInput>
+  </mat-form-field>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="closeModal()">Cerrar</button>
+<div mat-dialog-actions class="summit_button">
+  <button matFab extended="" (click)="closeModal()">Cerrar</button>
 </div>
 

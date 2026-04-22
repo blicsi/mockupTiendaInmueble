@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component,ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
+import { MatFabButton } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 @Component({
   selector: 'app-login',
-  imports: [],
+  imports: [MatButton, MatFabButton, MatInputModule],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
@@ -14,3 +17,4 @@ export class Login {
     this.dialogRef.close();
   }
 }
+

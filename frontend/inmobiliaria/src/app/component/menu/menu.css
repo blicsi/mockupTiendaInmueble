@@ -1,0 +1,16 @@
+span{
+    display: flex;
+    margin: 1%;
+    flex-direction:row;
+    ;
+}
+h1{
+    padding: 1% 1%;
+}
+.espaciador{
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    margin: 1% 1%;
+}

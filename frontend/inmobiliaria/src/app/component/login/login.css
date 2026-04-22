@@ -1,0 +1,19 @@
+h1{
+    padding: auto;
+    text-align: center;
+}
+
+.summit_button{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.login_screen{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+button{
+    padding: auto;
+    margin: auto;
+}
